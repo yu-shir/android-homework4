@@ -134,7 +134,7 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService{
         String result = "";
         try{
             Log.d(TAG, "进来了");
-            URL url2 = new URL("http://47.250.45.189:5000/api/a4/submit_push_token");//新的接口
+            URL url2 = new URL("http://47.250.45.189/api/a4/submit_push_token");//新的接口
             HttpURLConnection conn = (HttpURLConnection)url2.openConnection();
             conn.setReadTimeout(15000); //设置链接超时时间
             conn.setConnectTimeout(15000); //设置读取超时时间
@@ -187,7 +187,7 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService{
         // Create an explicit intent for an Activity in your app
         Intent intent = new Intent(this, ChatActivity.class);
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-        intent.putExtra("id",chatroom_id);
+        intent.putExtra("id",Integer.parseInt(chatroom_id));
         intent.putExtra("name",chatroom_name);
         PendingIntent pendingIntent = PendingIntent.getActivity(this, count /* Request code */, intent,
                 PendingIntent.FLAG_ONE_SHOT);

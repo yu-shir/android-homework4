@@ -46,8 +46,8 @@ public class ChatActivity extends AppCompatActivity {
     private int total_pages; //总页数
     private int current_page; //当前页数
     private List<info_mess> newinfo = new ArrayList<>();
-    private String ex_url = "http://47.250.45.189:5000/api/a3/get_messages?chatroom_id=";
-    private String sen_url = "http://47.250.45.189:5000/api/a3/send_message";
+    private String ex_url = "http://47.250.45.189/api/a3/get_messages?chatroom_id=";
+    private String sen_url = "http://47.250.45.189/api/a3/send_message";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

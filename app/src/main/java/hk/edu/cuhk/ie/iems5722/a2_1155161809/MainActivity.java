@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         ListView listview = (ListView) findViewById(R.id.listview);
-        String url = "http://47.250.45.189:5000/api/a3/get_chatrooms";
+        String url = "http://47.250.45.189/api/a3/get_chatrooms";
         myAysncTask myaysnctask = new myAysncTask(listview,this);
         myaysnctask.execute(url);
         //listview点击事件
