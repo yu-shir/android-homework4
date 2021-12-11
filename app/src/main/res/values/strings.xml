@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">A2_1155161809</string>
+    <string name="myname">Shir</string>
+    <string name="myid">1155161809</string>
+
+    <string name="default_notification_channel_id" translatable="false">fcm_default_channel</string>
+</resources>

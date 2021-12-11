@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "926264174561",
+    "project_id": "shir-project",
+    "storage_bucket": "shir-project.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:926264174561:android:305c9cb70cf4cdbcfbd4a0",
+        "android_client_info": {
+          "package_name": "hk.edu.cuhk.ie.iems5722.a2_1155161809"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "926264174561-k0sd0hq6amgruv18i4ng93b2ctrj8jcg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCeBAXelzDQFS7FQ0Gnj8CpVsu2-3vflK0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "926264174561-k0sd0hq6amgruv18i4ng93b2ctrj8jcg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
