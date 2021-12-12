@@ -89,10 +89,10 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService{
         // Check if message contains a notification payload.
         if (remoteMessage.getNotification() != null) {
             Log.d(TAG, "Message Notification Body: " + remoteMessage.getNotification().getBody());
-            sendNotification(remoteMessage.getNotification().getTitle(),
-                    remoteMessage.getNotification().getTag(),
-                    remoteMessage.getNotification().getBody());
-            count = count+1;
+//            sendNotification(remoteMessage.getNotification().getTitle(),
+//                    remoteMessage.getNotification().getTag(),
+//                    remoteMessage.getNotification().getBody());
+//            count = count+1;
             Log.d(TAG, remoteMessage.getNotification().getTitle());
         }
 
@@ -153,7 +153,8 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService{
             os.close();
 
             int responseCode = conn.getResponseCode();
-            Log.d(TAG, getString(responseCode));
+//            System.out.println("+++++++++++++++++++++++++++++++++++++++++");
+            System.out.println(responseCode);
             if(responseCode == HttpURLConnection.HTTP_OK){
                 Log.d(TAG,"在这里a");
                 InputStream inputStream = conn.getInputStream();
